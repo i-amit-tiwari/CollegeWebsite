@@ -1,0 +1,269 @@
+.slider-main-container {
+    width: 100%;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: var(--green);
+    flex-direction: column;
+
+}
+
+.slider-inner-container {
+    padding-bottom: 30px;
+}
+
+.slider-main-container h3 {
+    font-size: 35px;
+    font-family: lato;
+    color: #ffffff;
+    padding: 30px;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+
+.slider-container {
+    width: 1100px;
+    /* background-color: black; */
+    display: flex;
+    gap: 30px;
+    overflow-x: hidden;
+
+}
+
+.slider-one {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 200px; */
+    transition: transform .7s linear;
+
+
+}
+
+.slide {
+    width: 340px;
+    height: 450px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    /* border: 3px solid #b4b4b4; */
+
+}
+
+.slider-two {
+    display: flex;
+    gap: 30px;
+    /* background-color: aqua; */
+    transition: transform .7s linear;
+
+}
+
+.slide img {
+    width: 300px; 
+    height: 250px;
+    border-radius: 10px;
+    /* border: 5px solid #ffffff; */
+}
+
+.slide span {
+    font-size: 20px;
+    color: crimson;
+    font-family: lato;
+    padding-top: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.slide p {
+    font-size: 13px;
+    font-family: poppins;
+    color: #838282;
+    text-align: justify;
+    padding-top: 10px;
+}
+.slide a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    font-family: lato;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.course-button
+{
+    width: 150px;
+    background-color: var(--green);
+    text-align: center;
+}
+
+.controls {
+    height: 5px;
+    display: flex;
+    gap: 10px;
+}
+
+.control-1 {
+    width: 20px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: width .4s linear;
+    border: 2px solid #ffffff;
+}
+
+
+.control-2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: width .4s linear;
+    border: 2px solid #ffffff;
+
+}
+
+
+
+@media (max-width : 1186px) {
+    .slider-container {
+        width: 800px;
+    }
+
+
+    .slide {
+        width: 230px;
+    }
+
+
+    .slide p {
+        font-size: 13px;
+
+    }
+
+    .slide img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .slide span {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width:62em) {
+    .slider-container {
+        width: 400px;
+        display: grid;
+        place-content: center;
+    }
+
+    /* .slider-main-container {
+        display: none;
+    } */
+
+    .slider-container {
+        flex-direction: column;
+    }
+
+
+    .slider-one {
+        flex-direction: column;
+    }
+
+
+    .slide {
+        width: 100%;
+    }
+
+
+    .slide img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .controls {
+        display: none;
+    }
+
+
+    .title {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width:480px) {
+
+    
+    .slider-main-container
+    {
+        width: 100%;
+        
+    }
+
+    .slider-inner-container
+    {
+        width: 100%;
+    }
+    .slider-container
+    {
+       width: 100%;
+       padding: 20px;
+    }
+    .controls
+    {
+        display: none;
+    }
+
+  
+
+
+    .slide img
+    {
+        width: 100%;
+    }
+
+    .slider-inner-container {
+        padding-bottom: 10px;
+    }
+
+    .slider-one{
+        width: 100%;
+    }
+    .slider-two
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .slide
+    {
+        width: 100%;
+        height: 100%;
+        padding: none;
+    }
+
+  .slider-main-container h3
+    {
+        font-size: 20px;
+    }
+
+
+    .speaker-child-container img
+    {
+        width: 100%;
+    }
+}

@@ -1,0 +1,219 @@
+.partnership-academic
+{
+    width: 100%;
+    height: 500px;
+}
+
+.partnership-academic h2
+{
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: rgb(3, 58, 80);
+    padding: 50px;
+
+}
+
+.partners-parent-box
+{
+    display: flex;
+    width: 100%;
+   height: 100%; 
+ 
+}
+
+
+
+
+#child-slide-one
+{
+    width: 100%;
+    background-image: url(partner/partner1.jpg);
+    background-position: center;
+    background-size: cover;
+    filter:grayscale(100%);
+    transition: all .7s ease-in;
+    cursor: pointer;
+    position: relative;
+    transform-origin:left;
+
+
+}
+
+#child-slide-one::after
+{
+    content: 'Indian Institute of Technology Kanpur';
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+    font-family: poppins;
+
+}
+#child-slide-two:hover,
+#child-slide-third:hover,
+#child-slide-four:hover
+{
+    /* transform:scaleZ(2); */
+    transform:scaleX(1.7);
+    /* background-size:; */
+    filter:grayscale(0%);
+    z-index: 1;
+    transform-origin: center;
+
+}
+
+#child-slide-five:hover
+{
+    
+    /* transform:scaleZ(2); */
+    transform:scaleX(1.7);
+    /* background-size:; */
+    filter:grayscale(0%);
+
+    z-index: 1;
+    transform-origin:right;
+}
+#child-slide-one:hover
+{
+    
+    /* transform:scaleZ(2); */
+    transform:scaleX(1.7);
+    /* background-size:; */
+    filter:grayscale(0%);
+    z-index: 1;
+    transform-origin:left;
+}
+#child-slide-two
+{
+    width: 100%;
+    background-image: url(partner/partner2.jpg);
+    background-position: center;
+    background-size: cover;
+    filter:grayscale(100%);
+    transition: all .5s ease-in;
+
+}
+
+
+#child-slide-two::after
+{
+    content: 'JawaharLal Nehru University , Delhi';
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+    font-family: poppins;
+}
+
+#child-slide-third
+{
+    width: 100%;
+    background-image: url(partner/partner3.jpg);
+    background-position: center;
+    background-size: cover;
+    filter:grayscale(100%);
+    transition: all .5s ease-in;
+
+}
+
+
+#child-slide-third::after
+{
+    content: 'Oxford University , England';
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+    font-family: poppins;
+}
+#child-slide-four
+{
+    width: 100%;
+    background-image: url(partner/partner4.jpg);
+    background-position: center;
+    background-size:cover;
+    filter:grayscale(100%);
+    transition: all .5s ease-in;
+
+}
+
+#child-slide-four::after
+{
+    content: 'Saint Peter\'s university , North America';
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+    font-family: poppins;
+}
+#child-slide-five
+{
+    width: 100%;
+    background-image: url(partner/partner5.jpg);
+    background-position: center;
+    background-size: cover;
+    filter:grayscale(100%);
+    transition: all .5s ease-in;
+
+}
+
+
+#child-slide-five::after
+{
+    content: 'Banaras Hindu University , Uttar pradesh';
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+    font-family: poppins;
+}
+
+.child-partners-box
+{
+ height: 400px;
+}
+
+
+
+@media (max-width:480px)
+
+{
+    .partnership-academic
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.partnership-academic h2
+{
+    font-size:1.2rem;
+}
+
+.partners-parent-box
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#child-slide-one:hover,#child-slide-third:hover
+{
+    transform-origin: left;
+    z-index: 1;
+}
+
+#child-slide-two:hover,#child-slide-four:hover,#child-slide-five:hover
+{
+    transform-origin: right;
+    z-index: 0;
+}
+}

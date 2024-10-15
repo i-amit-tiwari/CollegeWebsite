@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap");
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+.back-to-home
+{
+    position: relative;
+    top: 150px;
+    left: 20px;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(94, 94, 94);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.back-to-home  h2
+{
+    font-size: 20px ;
+    font-family: lato;
+}
+
+
+span {
+    position: relative;
+    top: 100px;
+    left: 50%;
+    font-size: 25px ;
+    font-family: lato;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.gallery-grid
+{
+    margin-top: 100px;
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding:70px;
+}
+.gallery-slide-even
+{
+    display: flex;
+     align-items: center;
+    gap: 30px;
+    height: 300px;
+}
+
+.even{
+
+    width: 70%;
+    height: 300px;
+    position: relative;
+}
+
+
+.odd
+{
+    width:30%;
+    height: 300px;
+} 
+
+
+main a 
+{
+    text-decoration: none;
+    
+}
+ 
+
+
+
+
+
+

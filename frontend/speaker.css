@@ -1,0 +1,129 @@
+.speaker
+{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   /* padding: 30px; */
+}
+.speaker h2
+{
+font-size: 30px;
+font-family: lato;
+text-align: center;
+color: black;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+.speakers-main-container
+{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+.speaker-child-container
+{
+    height: 100%;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.7);
+    gap: 20px;
+    border-radius: 10px;
+    position: relative;
+    /* padding: 10px; */
+    overflow-y: hidden;
+}
+
+.speaker-child-container::before
+{
+    content: 'Personlaties';
+position: absolute;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 100%;
+background-color:rgba(211, 211, 211, 0.568);
+/* filter: blur(3px); */
+display:grid;
+place-items: center;
+font-size: 30px;
+font-family: lato;
+font-weight: bold;
+color: rgb(255, 255, 255);
+border-radius: 10px;
+transition: all .5s linear;
+
+    
+}
+
+
+.speaker-child-container:hover::before{
+    top:-500px;
+}
+.speaker-child-container img
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+.speaker-child-container h3
+{
+font-size: 16px;
+font-family: lato;
+/* text-align: justify; */
+color: black;
+text-transform: uppercase;
+}
+
+
+.speaker-child-container p
+{
+font-size: 13px;
+font-family: poppins;
+/* text-align: justify; */
+color: rgb(66, 66, 66);
+text-transform: uppercase;
+}
+
+
+
+@media (max-width:480px)
+{
+    .speaker
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .speakers-main-container
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0px 0px 10px 0px solid rgba(124, 124, 124, 0.6);
+    }
+    .speaker-child-container
+    {
+        width: 100%;
+    }
+
+    .speaker-child-container img
+    {
+        width: 100%;
+    }
+}
